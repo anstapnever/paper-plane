@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><body><script type="module">
+import { drawFace, CW, CH } from './facegen.mjs';
+window.renderFace = (f) => { const c = document.createElement('canvas'); c.width = CW; c.height = CH; drawFace(c.getContext('2d'), f); return c.toDataURL('image/png'); };
+window.__ok = true;
+</script>
